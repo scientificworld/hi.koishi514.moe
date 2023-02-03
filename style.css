@@ -1,5 +1,11 @@
+:root {
+    --fg-color: #333;
+    --bg-color: #eee;
+    --secondary-color: #ccc;
+    --comment-color: #aaa;
+}
+
 html {
-    color: #333;
     box-sizing: border-box;
     font-size: 16px;
 }
@@ -10,7 +16,8 @@ html {
 }
 
 .container {
-    padding: 1em;
+    color: var(--fg-color);
+    padding: .5em;
 }
 
 .biocard {
@@ -19,7 +26,7 @@ html {
 }
 
 .biocard > .name {
-    border-left: 0.25em solid #333;
+    border-left: 0.25em solid var(--fg-color);
     padding-left: 0.25em;
     font-family: 'PT Mono', monospace;
     font-size: 2em;
@@ -41,7 +48,7 @@ html {
     position: absolute;
     bottom: 0;
     right: 1.5rem;
-    color: #ccc;
+    color: var(--secondary-color);
     font-family: 'PT Serif', monospace;
     font-size: 1.5em;
     font-weight: bold;
@@ -71,20 +78,20 @@ html {
     font-weight: bold;
 }
 
-.group .member {
+.member {
     font-family: 'PT Mono', monospace;
 }
 
-.group-wide .member, .footer {
+.member.body, .footer {
     font-family: 'PT Serif', monospace;
 }
 
 a, a:visited {
-    color: #333;
+    color: var(--fg-color);
 }
 
 .comment {
-    color: #aaa;
+    color: var(--comment-color);
 }
 
 .comment::before {
