@@ -1,0 +1,94 @@
+html {
+    color: #333;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+.container {
+    padding: 1em;
+}
+
+.biocard {
+    max-width: 768px;
+    padding: 1em;
+}
+
+.biocard > .name {
+    border-left: 0.25em solid #333;
+    padding-left: 0.25em;
+    font-family: 'PT Mono', monospace;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.section {
+    background-color: #eee;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.section > .name {
+    color: #ccc;
+    float: right;
+    font-family: 'PT Serif', monospace;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.groups {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.group {
+    width: 310px;
+}
+
+.group-wide {
+    width: 100%;
+}
+
+.group-wide, .group {
+    margin-bottom: 0.5em;
+}
+
+.group > .name, .group-wide > .name {
+    font-size: 1.25em;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+}
+
+.group .member {
+    font-family: 'PT Mono', monospace;
+}
+
+.group-wide .member, .footer {
+    font-family: 'PT Serif', monospace;
+}
+
+a, a:visited {
+    color: #333;
+}
+
+.comment {
+    color: #aaa;
+}
+
+.comment::before {
+    padding-right: .25em;
+    content: '//';
+}
+
+.copyleft {
+    display: inline-block;
+    top: 2px;
+    position: relative;
+    transform: rotate(180deg);
+}
