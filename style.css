@@ -28,14 +28,20 @@ html {
 }
 
 .section {
+    position: relative;
     background-color: #eee;
-    margin-bottom: 1em;
     padding: 1em;
 }
 
+.section:not(:last-child) {
+    margin-bottom: 1em;
+}
+
 .section > .name {
+    position: absolute;
+    bottom: 0;
+    right: 1.5rem;
     color: #ccc;
-    float: right;
     font-family: 'PT Serif', monospace;
     font-size: 1.5em;
     font-weight: bold;
@@ -55,7 +61,7 @@ html {
     width: 100%;
 }
 
-.group-wide, .group {
+.group-wide:not(:last-child), .group:not(:last-child) {
     margin-bottom: 0.5em;
 }
 
