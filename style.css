@@ -64,15 +64,15 @@ html {
     width: 310px;
 }
 
-.group-wide {
-    width: 100%;
+.group.wide {
+    flex: 0 0 100%;
 }
 
-.group-wide:not(:last-child), .group:not(:last-child) {
+.group:not(:last-child) {
     margin-bottom: 0.5em;
 }
 
-.group > .name, .group-wide > .name {
+.group > .name {
     font-size: 1.25em;
     font-family: 'PT Serif', serif;
     font-weight: bold;
