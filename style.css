@@ -3,6 +3,7 @@
     --bg-color: #eee;
     --secondary-color: #ccc;
     --comment-color: #aaa;
+    --subtitle-color: #bbb;
 }
 
 html {
@@ -104,4 +105,10 @@ a, a:visited {
     top: 2px;
     position: relative;
     transform: rotate(180deg);
+}
+
+.subtitle {
+    color: var(--subtitle-color);
+    font-size: 16px;
+    margin-bottom: 1em;
 }
